@@ -1,3 +1,5 @@
+*Will be taking down this repository as soon as I got any feedback*
+
 As said in my last submission, with my given timeline of current role,
 i find time hardly to spend on other stuff, So i had to learn python to correct the backend first, that took
 me bit longer during the weekend, as i wasn't expected python to be in the challege.
