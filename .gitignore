@@ -1,0 +1,4 @@
+/venv
+/static/package-lock.json
+/static/node_modules
+/.idea

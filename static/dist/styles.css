@@ -1,0 +1,190 @@
+/* todo: implement any css code to style the page */
+body{
+    font-family: 'Myriad Set Pro', 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    background-color: #EEEEEE;
+}
+
+.container-fluid{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    height: 380px;
+    width: 580px;
+    background-color: white;
+    box-shadow: 1px 1px 37px -6px #CBCBCB;
+    position: relative;
+}
+
+.head{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1px solid #BEBEBE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*for dots -- start*/
+
+.dots ul {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+}
+
+.dots li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 16px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.dots li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 100%;
+    background-color: #CC0000;
+    text-indent: -999em;
+    cursor: pointer; /* make the text accessible to screen readers */
+    position: absolute;
+}
+
+.dots-fillup{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.dots-fillup li a {
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 2px #CC0000;
+    transition: background 0.3s;
+}
+
+.dots-fillup li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: #CC0000;
+    box-shadow: 0 0 1px #000;
+    transition: height 0.3s;
+}
+
+.dots-fillup li a:hover,
+.dots-fillup li a:focus {
+    background-color: rgba(204,0,0,0.2);
+}
+
+.dots-fillup li.current a::after {
+    height: 100%;
+}
+
+/*for dots -- end*/
+
+.main-content{
+    width: 100%;
+    height: 85%;
+    border-bottom: 1px solid #BEBEBE;
+    padding: 50px;
+}
+
+.question{
+    display: flex;
+}
+
+.question-text{
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.line{
+    margin: 10px;
+}
+
+.grey-text{
+    font-size: 18px;
+    color: #C5C5C5;
+}
+
+.options{
+    display: flex;
+}
+
+.answer-options{
+    background: transparent;
+    padding: 3px 20px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.answer-options:focus{
+    border: 2px solid #CC0000;
+    margin: -1px;
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em 4em;
+    padding: 6px 30px;
+    width: 280px;
+}
+
+.submit-button{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-button{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #BEBEBE;
+    position: absolute;
+    bottom: 0;
+    margin-left: -50px;
+}
+
+.button{
+    background: #CC0000;
+    color: white;
+    border-radius: 6px;
+    padding: 4px 12px;
+    outline: none;
+}
+
+@media screen and (max-width: 610px) {
+    .wrapper{
+        width: 350px;
+        height: 500px;
+    }
+
+    .question p, .options p, .answer-options{
+        font-size: 15px;
+    }
+
+    .answers{
+        grid-template-columns: 92%;
+        padding: 7px 37px;
+        margin-left: -37px;
+    }
+}
