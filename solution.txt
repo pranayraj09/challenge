@@ -4,7 +4,7 @@ me bit longer during the weekend, as i wasn't expected python to be in the chall
 But i had great fun learning it. This is main reason i didn't spent too much time on front end and used basic JQuery.
 
 But lately, i got time during weekdays, and implemented this beautiful approach with react.
-After downloading the files and extracting,
+After downloading the files and extracting(or cloning https://github.com/pranayraj09/challenge)
 
 folder structure:
 Challenge
